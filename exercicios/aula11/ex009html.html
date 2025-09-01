@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sua nacionalidade</h1>
+    Digite o país que você nasceu: 
+    <input type="text" name="nac" id="nac"><br><br>
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="seup"></div>
+
+    <script>
+        function verificar(){
+            var pais = document.querySelector('input#nac')
+            var seupais = document.querySelector('div#seup')
+            var paisDigitado = pais.value.trim().toLowerCase()
+
+            if(paisDigitado === 'brasil'){
+                seupais.innerHTML = '<p>Você é <strong>brasileiro</strong>!</p>'
+            } else {
+                seupais.innerHTML = '<p>Você é <strong>estrangeiro</strong>!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
