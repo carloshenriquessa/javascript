@@ -11,4 +11,4 @@ var c = 1
 do {
     console.log(`Você é o aluno ${c} na chamada`)
     c++
-} while (c <= 6)
+} while (c <= 20)
